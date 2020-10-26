@@ -24,19 +24,10 @@ function App() {
         </Header>
 
         <Content  style={{background: 'url(https://cdn.planittesting.com/planit/media/siteimages/backgrounds/training-bg.jpg?ext=.jpg) center / cover'}}>
-            <div/>
+            
             <Main></Main>
         </Content>
-        <Footer size="mini">
-        <div style={{float: 'left'}}><img src="https://cdn.planittesting.com/planit/media/siteimages/components/planit-logo-140.png" width="50" alt ="logo" /></div>
-          <FooterSection type="right">
-              <FooterLinkList>
-                  <Link to="/contact">Contact</Link>
-                  <a target="_blank" href="/terms">Terms & Conditions</a>
-                  <a target="_blank" href="/WebSite">Privacy</a>
-              </FooterLinkList>
-          </FooterSection>
-      </Footer>
+        
     </Layout>
 </div>
 
