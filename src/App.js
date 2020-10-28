@@ -17,10 +17,8 @@ function App() {
     
     <div className="demo-big-content">
     <Layout >
-        <Header title="Plabot" scroll onClick={getResume}>
-            {/* <Navigation>
-            <Link to="/resume">Resume</Link>
-            </Navigation> */}
+        <Header>
+        <div style={{ float: 'left' }}><img src="https://cdn.planittesting.com/planit/media/siteimages/components/planit-logo-140.png" width="50" alt="logo" /></div>
         </Header>
 
         <Content  style={{background: 'url(https://cdn.planittesting.com/planit/media/siteimages/backgrounds/training-bg.jpg?ext=.jpg) center / cover'}}>
