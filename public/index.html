@@ -36,9 +36,11 @@
   <style>
     html, body {
         height: 100%;
+        
     }
     body {
         margin: 0;
+        background-image: url('https://cdn.planittesting.com/planit/media/siteimages/backgrounds/training-bg.jpg?ext=.jpg');
     }
     h1 {
         font-size: 16px;
@@ -57,23 +59,42 @@
         border-radius: 4px;
     }
     .headers {
-  background-color: #066fee;  /* fallback for old browsers */
+  background-color: #0072bb;  /* fallback for old browsers */
 
 }
 
     div[role="form"]{
-        background-color: black;
+        /* background-color: black; */
     }        
     #webchat {
-        position: fixed;
+        position: right;
         height: calc(100% - 50px);
-        width: 100%;
+        width: 40%;
         top: 50px;
-        overflow: hidden;
+        overflow: visible;
+        float: right;
+        
     }
     .flt {
         float: left;
    
+    }
+    .iframestyle{
+        
+        
+        height: 100%;
+        width: 100%;
+        position: fixed; /*or fixed*/
+        right: 0px;
+        background-image: url('https://cdn.planittesting.com/planit/media/siteimages/backgrounds/training-bg.jpg?ext=.jpg');
+       
+    
+    }
+    .iframepag{
+        
+        background-image: url('https://cdn.planittesting.com/planit/media/siteimages/backgrounds/training-bg.jpg?ext=.jpg');
+       
+    
     }
   </style>
 </head>
@@ -81,6 +102,7 @@
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+  <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
   <script type="text/javascript" src="Chart.js"></script>
 
   <script type="text/javascript" src="xlsx.full.min.js"></script>
@@ -91,20 +113,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
   <div >
     <div class="headers">
-
-        <!-- Change the h1 text to change the bot name -->    
-        <!-- <h2>PlanitBot</h2> -->
         <div ><img src="https://cdn.planittesting.com/planit/media/siteimages/components/planit-logo-140.png" width="50" alt="logo" /></div>
-  
     </div>
-    <div id="webchat" role="main" ></div>
+      
 </div>    
-<script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+<div class="iframepag"></div>
+    <div class="iframestyle" id="webchat" role="main" ></div>
+
+
 
   <script>
     const styleOptions = {
                // Add styleOptions to customize web chat canvas
-               hideUploadButton: true
+               hideUploadButton: false,
+            botAvatarImage: 'https://docs.microsoft.com/en-us/azure/bot-service/v4sdk/media/logo_bot.svg',
+            userAvatarImage: 'https://docs.microsoft.com/en-us/azure/bot-service/v4sdk/media/logo_bot.svg'
             };
 
             // Add your BOT ID below
