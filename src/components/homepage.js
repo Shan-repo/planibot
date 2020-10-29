@@ -1,27 +1,16 @@
 import React  from "react"; 
-import Select from 'react-select';
+
 import 'bootstrap/dist/css/bootstrap.css';
-import Avatar from '@material-ui/core/Avatar';
-import Button from '@material-ui/core/Button';
-import CssBaseline from '@material-ui/core/CssBaseline';
+
 import Link from '@material-ui/core/Link';
-import Box from '@material-ui/core/Box';
+
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
+
 import { useHistory } from "react-router-dom";
 
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-
   
-  const Resources = [
-    { value: 'Shanavas', label: 'Shanavas' },
-
-  ];
+ 
 
   const useStyles = makeStyles((theme) => ({
     paper: {
@@ -54,18 +43,7 @@ import CardMedia from '@material-ui/core/CardMedia';
       height: 140,
     },
   }));
-  function Copyright() {
-    return (
-      <Typography variant="body2" color="textSecondary" align="center">
-        {'Copyright © '}
-        <Link color="inherit" href="https://www.planittesting.com/au/home">
-          Planit Testing
-        </Link>{' '}
-        {new Date().getFullYear()}
-        {'.'}
-      </Typography>
-    );
-  }
+  
 
 
 export default function Homepage() {
@@ -75,10 +53,10 @@ export default function Homepage() {
     return ( 
       
       <div className={classes.containers}>
-      <iframe 
+      {/* <iframe 
             style={{float:'right',maxWidth:500,width:'100%', height:'100%', overflow:'visible'}}
             src="https://powerva.microsoft.com/webchat/bots/41606844-637c-4f67-bb0b-879bbbafe63d"    
-        />
+        /> */}
 
   </div>
 
